@@ -16,37 +16,31 @@
     					
     					<li><a href="index.html">Home</a></li>
     					<li><a href="about.html">About Me</a></li>
-    					<li><a><strong>Game</strong></a></li>
+						<li><a href="Fortune.html">Game</a></li>
     					<li><a href="readings.html">Readings</a></li>
-						<li><a href="grade.html">Grade Calculator</a></li>
+						<li><a><strong>Grade Calculator</strong></a></li>
   					</ul>
 				</nav>
 				
 			</div>
 			<div id="title">
-				<h1>Fortune Telling Exercise:</h1>
+				<h1>GPA Calculator:</h1>
 			</div>
 			<div id="text">
-				<p>Here is the fortune telling exercise:</p>
-				<p id="blah"></p>
-				<p id="Letter"></p>
-				<p id="CountUp"></p>
-				<p id="Welcome"></p>
-				<p id="tada"></p>
-				<p id="demo"></p>
+				<p>Wanna find out what your GPA is? well click the following button to know</p>
 				<p id="date"></p>
 				<!--<script src="js/fortune.js"></script>-->
-				<button id='mylink'><strong>Start Game</strong></button>
+				<button id='Hello'><strong>GPA Calculator</strong></button>
 
 				<script type="text/javascript">
-
-					var myLink = document.getElementById('mylink');
+					console.log("in script");
+					var myLink = document.getElementById('Hello');
 
 					myLink.onclick = function(){
 
     					var script = document.createElement("script");
     					script.type = "text/javascript";
-    					script.src = "js/fortune.js"; 
+    					script.src = "js/gpaCalculator.js"; 
     					document.getElementsByTagName("head")[0].appendChild(script);
     					return false;
 
