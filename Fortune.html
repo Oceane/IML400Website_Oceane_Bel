@@ -18,7 +18,7 @@
     					<li><a href="about.html">About Me</a></li>
     					<li><a><strong>Game</strong></a></li>
     					<li><a href="readings.html">Readings</a></li>
-						<li><a href="grade.html">Grade Calculator</a></li>
+						<!--<li><a href="grade.html">Grade Calculator</a></li>-->
   					</ul>
 				</nav>
 				
@@ -47,6 +47,24 @@
     					var script = document.createElement("script");
     					script.type = "text/javascript";
     					script.src = "js/fortune.js"; 
+    					document.getElementsByTagName("head")[0].appendChild(script);
+    					return false;
+
+					}
+				</script>
+				<br>
+				<p>Wanna know your GPA? Then click on the following button</p>
+				<p id="GPA"></p>
+				<button id='Hello'><strong>GPA Calculator</strong></button>
+				<script type="text/javascript">
+					console.log("in script");
+					var myLink = document.getElementById('Hello');
+
+					myLink.onclick = function(){
+
+    					var script = document.createElement("script");
+    					script.type = "text/javascript";
+    					script.src = "js/gpaCalculator.js"; 
     					document.getElementsByTagName("head")[0].appendChild(script);
     					return false;
 

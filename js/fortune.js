@@ -35,9 +35,9 @@ var cuddy = function(){
 	var NumBlah = "";
 	while(!isNaN(userColor)|| !(userColor === "blue") && !(userColor === "red")&& !(userColor === "green")&& !(userColor === "yellow")){
 		userColor = prompt("Choose a color between 'blue', 'red', 'green' or yellow: ", "Enter it here");
-		userColor.toLowerCase();
+		userColor = userColor.toLowerCase();
 	}
-	userColor.toUpperCase();
+	userColor = userColor.toUpperCase();
 	creationOfLetterArray(userColor);
 	for(var j = 0; j<letterArray.length; j++){
 		LetterString += letterArray[j];

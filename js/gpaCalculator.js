@@ -17,7 +17,7 @@ var Calculator = function(num){
 	alert("Now that you have entered the class names let's begin to enter your grades")
 	for(var j = 0; j < num ; j++){
 		while(UserGrade === -1){
-			UserGrade = prompt("Enter the grade for your "+ ClassNameArray[j] + ".", "Enter it Here" );
+			UserGrade = prompt("Enter the grade for your "+ ClassNameArray[j] + " class.", "Enter it Here" );
 		}
 		if(isNaN(UserGrade) ){
 			switch(UserGrade){
